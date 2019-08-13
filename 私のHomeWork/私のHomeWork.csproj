@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DC875A0-061D-472F-B270-48A5E90E88ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>私のHomeWork</RootNamespace>
+    <AssemblyName>私のHomeWork</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_9x9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_9x9.Designer.cs">
+      <DependentUpon>Frm_9x9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lorn_Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lorn_Form1.Designer.cs">
+      <DependentUpon>Lorn_Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lorn_Report2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lorn_Report2.Designer.cs">
+      <DependentUpon>Lorn_Report2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="UI介面表格\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI介面表格\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI介面表格\FrmMyNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI介面表格\FrmMyNote.Designer.cs">
+      <DependentUpon>FrmMyNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI介面表格\OOXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI介面表格\OOXX.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StrandardPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StrandardPractice.Designer.cs">
+      <DependentUpon>StrandardPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentScore.Designer.cs">
+      <DependentUpon>StudentScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentScoreStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentScoreStatistics.Designer.cs">
+      <DependentUpon>StudentScoreStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentScoreStatisticsGeneric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentScoreStatisticsGeneric.Designer.cs">
+      <DependentUpon>StudentScoreStatisticsGeneric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentScoreStatisticsUtility.cs" />
+    <Compile Include="UI介面表格\ScreenProtect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI介面表格\ScreenProtect.Designer.cs">
+      <DependentUpon>ScreenProtect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI介面表格\UI_MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI介面表格\UI_MainPage.Designer.cs">
+      <DependentUpon>UI_MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI介面表格\小畫家.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI介面表格\小畫家.Designer.cs">
+      <DependentUpon>小畫家.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI介面表格\相片檢視器.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI介面表格\相片檢視器.Designer.cs">
+      <DependentUpon>相片檢視器.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI介面表格\經.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI介面表格\經.Designer.cs">
+      <DependentUpon>經.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="應用程序\PictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="應用程序\PictureViewer.Designer.cs">
+      <DependentUpon>PictureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="猜數字\Frm猜數字.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="猜數字\Frm猜數字.Designer.cs">
+      <DependentUpon>Frm猜數字.cs</DependentUpon>
+    </Compile>
+    <Compile Include="私のMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="私のMainPage.Designer.cs">
+      <DependentUpon>私のMainPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_9x9.resx">
+      <DependentUpon>Frm_9x9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lorn_Form1.resx">
+      <DependentUpon>Lorn_Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lorn_Report2.resx">
+      <DependentUpon>Lorn_Report2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\私のHomeWork.BrokenLorn_Report.resources" />
+    <EmbeddedResource Include="obj\Debug\私のHomeWork.CashierForm1.resources" />
+    <EmbeddedResource Include="obj\Debug\私のHomeWork.Lorn_Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\私のHomeWork.Lorn_Report2.resources" />
+    <EmbeddedResource Include="obj\Debug\私のHomeWork.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\私のHomeWork.StudentScore.resources" />
+    <EmbeddedResource Include="obj\Debug\私のHomeWork.私のMainPage.resources" />
+    <EmbeddedResource Include="UI介面表格\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI介面表格\FrmMyNote.resx">
+      <DependentUpon>FrmMyNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI介面表格\OOXX.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StrandardPractice.resx">
+      <DependentUpon>StrandardPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentScore.resx">
+      <DependentUpon>StudentScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentScoreStatistics.resx">
+      <DependentUpon>StudentScoreStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentScoreStatisticsGeneric.resx">
+      <DependentUpon>StudentScoreStatisticsGeneric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI介面表格\ScreenProtect.resx">
+      <DependentUpon>ScreenProtect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI介面表格\UI_MainPage.resx">
+      <DependentUpon>UI_MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="應用程序\PictureViewer.resx">
+      <DependentUpon>PictureViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="猜數字\Frm猜數字.resx">
+      <DependentUpon>Frm猜數字.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="私のMainPage.resx">
+      <DependentUpon>私のMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\私のHomeWork.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\私のHomeWork.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\私のHomeWork.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\私のHomeWork.csprojAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\私のHomeWork.exe" />
+    <Content Include="bin\Debug\私のHomeWork.pdb" />
+    <Content Include="obj\Debug\私のHomeWork.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\私のHomeWork.exe" />
+    <Content Include="obj\Debug\私のHomeWork.pdb" />
+    <Content Include="WindowsFormsApp1.csproj" />
+    <Content Include="私のワーカー.csproj" />
+    <Content Include="私のワーカー.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
